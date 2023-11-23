@@ -1,21 +1,19 @@
-import { defineConfig } from 'astro/config'
 import starlight from '@astrojs/starlight'
+import { defineConfig } from 'astro/config'
 
 import markdoc from '@astrojs/markdoc'
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
       title: 'FromeSoftware',
       social: {
-        github: 'https://github.com/withastro/starlight',
+        github: 'https://github.com/FromeSoftware/website',
       },
       sidebar: [
         {
           label: 'Guides',
           items: [
-            // Each item here is one entry in the navigation menu.
             {
               label: 'Example Guide',
               link: '/guides/example/',
