@@ -26,6 +26,7 @@ jobs:
     uses: winstxnhdw/actions/.github/workflows/codespell.yml@main
     with:
       path: src/content/docs
+      ignore_words_file: .codespellignore
 
   build:
     runs-on: ubuntu-latest
