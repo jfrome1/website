@@ -22,6 +22,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  codespell:
+    uses: winstxnhdw/actions/.github/workflows/codespell.yml@main
+    with:
+      path: src/content/docs
+
   build:
     runs-on: ubuntu-latest
 
