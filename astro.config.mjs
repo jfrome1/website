@@ -4,6 +4,8 @@ import { defineConfig } from 'astro/config'
 import markdoc from '@astrojs/markdoc'
 
 export default defineConfig({
+  site: 'https://fromesoftware.github.io',
+  base: '/website',
   integrations: [
     starlight({
       title: 'FromeSoftware',
