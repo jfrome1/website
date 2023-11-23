@@ -41,7 +41,7 @@ jobs:
           node-version: latest
 
   deploy:
-    needs: build
+    needs: [build, codespell]
     runs-on: ubuntu-latest
     environment:
       name: github-pages
