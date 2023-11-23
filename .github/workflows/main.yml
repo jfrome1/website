@@ -4,13 +4,11 @@ on:
   workflow_dispatch:
   push:
     branches: main
-    paths:
-      - .github/workflows/main.yml
-      - package.json
-      - bun.lockb
-      - astro.config.mjs
-      - src/**
-      - public/**
+    paths-ignore:
+      - '**/dependabot.yml'
+      - .vscode/**
+      - .gitignore
+      - README.md
 
 permissions:
   contents: read
