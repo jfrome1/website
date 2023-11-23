@@ -1,5 +1,8 @@
 # website
 
+[![main.yml](https://github.com/FromeSoftware/website/actions/workflows/main.yml/badge.svg)](https://github.com/FromeSoftware/website/actions/workflows/main.yml)
+[![dependabot.yml](https://github.com/FromeSoftware/website/actions/workflows/dependabot.yml/badge.svg)](https://github.com/FromeSoftware/website/actions/workflows/dependabot.yml)
+
 ## 🚀 Project Structure
 
 Inside of your Astro + Starlight project, you'll see the following folders and files:
