@@ -14,7 +14,7 @@
     "@astrojs/markdoc": "^0.8.0",
     "@astrojs/starlight": "^0.15.0",
     "astro": "^4.0.2",
-    "sharp": "0.33.1"
+    "sharp": "0.33.2"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.12.0",
