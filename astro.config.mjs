@@ -1,7 +1,14 @@
-import starlight from '@astrojs/starlight'
-import { defineConfig } from 'astro/config'
-
+import starlight from '@astrojs/starlight';
+import { defineConfig } from 'astro/config';
+import mdx from '@astrojs/mdx';
 import markdoc from '@astrojs/markdoc'
+
+export default defineConfig({
+  // ...
+  integrations: [mdx()],
+});
+
+
 
 export default defineConfig({
   site: 'https://fromesoftware.github.io',
@@ -31,5 +38,6 @@ export default defineConfig({
       ],
     }),
     markdoc(),
+    mdx(),
   ],
 })
