@@ -25,8 +25,12 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch' }}
 
-    uses: winstxnhdw/actions/.github/workflows/dependabot-public.yml@main
-    secrets:
-      token: ${{ secrets.GITHUB_TOKEN }}
-    permissions:
-      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Auto-merge PR
+        run: |
+          gh pr merge --squash ${{ github.event.pull_request.html_url }} || gh pr merge --auto --squash ${{ github.event.pull_request.html_url }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
