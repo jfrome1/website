@@ -2,8 +2,17 @@
 title: Hello, World!
 description: This is a page in my Starlight-powered site
 ---
+# Nutshell Integration Page
+
+Welcome to the Nutshell integration page. The Nutshell script will be added below.
 
 <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    Nutshell.init();
+  });
+</script>
 
 ## To write a section,
 
