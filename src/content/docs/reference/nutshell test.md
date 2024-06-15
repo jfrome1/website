@@ -6,13 +6,7 @@ description: This is a page in my Starlight-powered site
 
 Welcome to the Nutshell integration page. The Nutshell script will be added below.
 
-<script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-    Nutshell.init();
-  });
-</script>
+<NutshellScript />
 
 ## To write a section,
 
