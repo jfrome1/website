@@ -1,12 +1,14 @@
 ---
 import { Markdown } from '@astrojs/markdown-remark';
----
 
-<html>
-  <head>
-    <title>Your Site</title>
-  </head>
-  <body>
-    <slot />
-  </body>
-</html>
+const DefaultLayout = ({ children }) => {
+  return (
+    <div>
+      <Markdown />
+      {children}
+    </div>
+  );
+};
+
+export default DefaultLayout;
+---
