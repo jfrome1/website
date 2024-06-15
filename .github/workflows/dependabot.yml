@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
 
     uses: winstxnhdw/actions/.github/workflows/dependabot-public.yml@main
-    secrets:
+    with:
       token: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: write
