@@ -1,6 +1,11 @@
 name: Dependabot
 
-on: pull_request
+# Trigger the workflow on pull requests and pushes to the main branch
+on:
+  pull_request:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -16,6 +21,7 @@ jobs:
           node-version: latest
 
   auto-merge:
+    if: github.event_name == 'pull_request'
     needs: build
     uses: winstxnhdw/actions/.github/workflows/dependabot-public.yml@main
     secrets:
