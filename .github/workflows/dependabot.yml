@@ -22,12 +22,12 @@ jobs:
           node-version: latest
 
   auto-merge:
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
     needs: build
     runs-on: ubuntu-latest
 
     uses: winstxnhdw/actions/.github/workflows/dependabot-public.yml@main
-    with:
+    secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: write
